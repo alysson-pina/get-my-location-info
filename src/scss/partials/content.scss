@@ -1,0 +1,28 @@
+content {
+  .row {
+    clear: both;
+
+    div:not(.no-padding) {
+      padding-right: 5px;
+    }
+
+    .geolocation input {
+      cursor: default;
+    }
+
+    button {
+      margin: 0;
+      width: 100%;
+    }
+
+    .submitted {
+      input:valid {
+        border-color: #3adb76;
+      }
+
+      input:invalid {
+        border: 1px dashed #a53b2a;
+      }
+    }
+  }
+}

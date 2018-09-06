@@ -1,4 +1,4 @@
-# webpack4-marionette (v0.0.3)
+# get-my-location-info with webpack4-marionette
 
 > Still gotta write a lot more readme than this. 
 > Also still implementing functionality, it'll be ready to use @ v1.0.0+
@@ -41,5 +41,3 @@ The .html file is created by `html-webpack-plugin` and it's using `html-webpack-
 
 Prod code minifies the HTML, CSS and JS, as well as split CSS into it's own file, for better performance. 
 
-
-# get-my-location-info

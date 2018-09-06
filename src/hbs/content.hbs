@@ -1,0 +1,37 @@
+<form id="form" method="post" class="flex align-stretch" enctype="application/json" action="http://mockbin.com/request">
+    <div class="small-3">
+        <input id="number" name="number" type="number" placeholder="Address #" maxlength="6" required="required"/>
+    </div>
+    <div class="small-9">
+        <input id="street" name="street" type="text" placeholder="Street name" minlength="2" maxlength="30" required="required"/>
+    </div>
+    <div class="small-12">
+        <input id="complement" name="complement" type="text" pattern="[0-9A-Za-z]+" placeholder="Address complement (optional)"/>
+    </div>
+    <div class="small-12">
+        <input id="city" name="city" pattern="[^0-9]*" type="text" placeholder="City" minlength="3" maxlength="30" required="required"/>
+    </div>
+    <div class="small-6">
+        <input id="state" name="state" pattern="[^0-9]*" type="text" placeholder="State" minlength="2" maxlength="30" required="required"/>
+    </div>
+    <div class="small-6">
+        <input id="country" name="country" pattern="[^0-9]*" type="text" placeholder="Country" minlength="2" maxlength="30" required="required"/>
+    </div>
+    <div class="small-6 geolocation">
+        <span>Latitude:</span>
+        <input id="lat" name="lat" type="text" placeholder="Latitude" readonly/>
+    </div>
+    <div class="small-6 geolocation">
+        <span>Longitude:</span>
+        <input id="lng" name="lng" type="text" placeholder="Longitude" readonly/>
+    </div>
+
+    <div class="row align-center no-padding">
+        <div class="small-6">
+            <button class="button" id="geolocation" type="button">Fill my location</button>
+        </div>
+        <div class="small-6">
+            <button id="submit" class="button" formtarget="_self">Submit</button>
+        </div>
+    </div>
+</form>
